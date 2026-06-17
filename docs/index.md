@@ -8,6 +8,7 @@
 ## Shared Engineering Rules
 
 - [Engineering rules index](rules/index.md)
+- [Engineering rules subtree note](engineering-rules-subtree.md)
 
 ## Placement Rules
 
