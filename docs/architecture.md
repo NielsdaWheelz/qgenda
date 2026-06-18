@@ -1,7 +1,23 @@
 # Architecture
 
 Date: 2026-06-17
-Status: Draft architecture decision
+Status: Draft architecture decision (v0.1). Realized and extended by v0.2.
+
+## v0.2 Update
+
+The v0.1 decisions below are implemented. v0.2 (`specs/v0.2-local-usable-mvp-spec.md`) adds the
+planning layer the "Future decision" notes anticipated and is the current architecture of record for
+the app surface. Concretely:
+
+- The repo is now a Bun workspace: `packages/core` (engine + planning compiler + exports), `packages/storage`
+  (SQLite/Drizzle), `apps/web` (Hono API + React/Vite UI). The v0.1 engine moved verbatim into `packages/core/src`.
+- Humans edit a typed `PlanningState`, never scenario JSON. A pure compiler (`packages/core/src/compiler`) turns
+  planning state into the engine `ScheduleScenario`; the engine remains the only assignment authority.
+- SQLite (Drizzle, `bun:sqlite`) stores the planning workspace and immutable run snapshots. Hono is a thin API
+  adapter; React/Vite is a thin UI adapter that never recomputes rules or fairness.
+
+The single-package directory architecture and the "no DB / no HTTP / no frontend" notes below describe v0.1
+only; the v0.2 spec supersedes them.
 
 ## Position
 

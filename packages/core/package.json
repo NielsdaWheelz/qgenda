@@ -1,0 +1,38 @@
+{
+  "name": "@qgenda/core",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./api/generateSchedule": "./src/api/generateSchedule.ts",
+    "./compiler/compileDiagnostics": "./src/compiler/compileDiagnostics.ts",
+    "./compiler/compilePlanningScenario": "./src/compiler/compilePlanningScenario.ts",
+    "./domain/calendar": "./src/domain/calendar.ts",
+    "./domain/hash": "./src/domain/hash.ts",
+    "./domain/ids": "./src/domain/ids.ts",
+    "./domain/scenario": "./src/domain/scenario.ts",
+    "./domain/schedule": "./src/domain/schedule.ts",
+    "./export/calendarEvents": "./src/export/calendarEvents.ts",
+    "./export/csv": "./src/export/csv.ts",
+    "./export/ics": "./src/export/ics.ts",
+    "./export/printableHtml": "./src/export/printableHtml.ts",
+    "./planning/demandExpansion": "./src/planning/demandExpansion.ts",
+    "./planning/openingLedger": "./src/planning/openingLedger.ts",
+    "./planning/planningSchema": "./src/planning/planningSchema.ts",
+    "./planning/planningValidation": "./src/planning/planningValidation.ts",
+    "./planning/unavailableDates": "./src/planning/unavailableDates.ts",
+    "./rules/catalog": "./src/rules/catalog.ts",
+    "./rules/weights": "./src/rules/weights.ts",
+    "./scorecard/ledger": "./src/scorecard/ledger.ts",
+    "./scorecard/scorecard": "./src/scorecard/scorecard.ts",
+    "./solver/Solver": "./src/solver/Solver.ts",
+    "./validation/postsolve": "./src/validation/postsolve.ts",
+    "./validation/preflight": "./src/validation/preflight.ts"
+  },
+  "bin": {
+    "qgenda-solve": "./src/cli/main.ts"
+  },
+  "dependencies": {
+    "effect": "^3.21.3"
+  }
+}

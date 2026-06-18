@@ -17,6 +17,16 @@
     "actions": { "source": { "organizeImports": "on" } }
   },
   "files": {
-    "includes": ["src/**/*.ts", "tests/**/*.ts", "*.json", "examples/**/*.json"]
+    "includes": [
+      "packages/**/*.ts",
+      "apps/**/*.{ts,tsx}",
+      "tests/**/*.{ts,tsx}",
+      "*.json",
+      "packages/**/*.json",
+      "apps/**/*.json",
+      "examples/**/*.json",
+      "!packages/storage/src/migrations",
+      "!apps/web/dist"
+    ]
   }
 }

@@ -1,0 +1,172 @@
+{
+  "workspace": {
+    "schema_version": "v0.2",
+    "workspace_id": "local",
+    "timezone": "America/Los_Angeles",
+    "active_cycle_start": "2026-01-01",
+    "active_cycle_end": "2026-12-31",
+    "opening_ledger_start_fresh": true
+  },
+  "providers": [
+    {
+      "provider_id": "dr_anderson",
+      "display_name": "Dr. Anderson",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_brooks",
+      "display_name": "Dr. Brooks",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_chen",
+      "display_name": "Dr. Chen",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_diaz",
+      "display_name": "Dr. Diaz",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_patel",
+      "display_name": "Dr. Patel (0.5 FTE)",
+      "fte": 0.5,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_okafor",
+      "display_name": "Dr. Okafor",
+      "fte": 1.0,
+      "call_eligible": false,
+      "eye_eligible": true,
+      "dental_eligible": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    }
+  ],
+  "unavailability": [],
+  "demand_templates": [
+    {
+      "template_id": "tpl_mon",
+      "weekday": "monday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_tue",
+      "weekday": "tuesday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_wed",
+      "weekday": "wednesday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 1,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_thu",
+      "weekday": "thursday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 1,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_fri",
+      "weekday": "friday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_sat",
+      "weekday": "saturday",
+      "room_count": 2,
+      "normal_list_slots": 1,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_sun",
+      "weekday": "sunday",
+      "room_count": 2,
+      "normal_list_slots": 1,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    }
+  ],
+  "date_exceptions": [],
+  "holidays": [
+    {
+      "holiday_id": "spring_holiday_2026",
+      "date": "2026-03-06",
+      "label": "Spring Holiday",
+      "class": "minor",
+      "weekend_block_id": null
+    }
+  ],
+  "weekend_blocks": [
+    {
+      "weekend_block_id": "first_march_weekend_2026",
+      "label": "First March weekend",
+      "dates": ["2026-03-07", "2026-03-08"],
+      "split_required": true,
+      "required_distinct_call_providers": 2
+    }
+  ],
+  "opening_ledger": []
+}

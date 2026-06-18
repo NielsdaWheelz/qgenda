@@ -1,0 +1,40 @@
+{
+  "name": "@qgenda/web",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./client/App": "./src/client/App.tsx",
+    "./client/api/client": "./src/client/api/client.ts",
+    "./client/api/schemas": "./src/client/api/schemas.ts",
+    "./client/components/CalendarGrid": "./src/client/components/CalendarGrid.tsx",
+    "./client/components/ExportMenu": "./src/client/components/ExportMenu.tsx",
+    "./client/components/ProviderDayGrid": "./src/client/components/ProviderDayGrid.tsx",
+    "./client/components/ProviderForm": "./src/client/components/ProviderForm.tsx",
+    "./client/components/ScorecardPanel": "./src/client/components/ScorecardPanel.tsx",
+    "./client/state": "./src/client/state.tsx",
+    "./server/http": "./src/server/http.ts"
+  },
+  "scripts": {
+    "dev": "bun run dev.ts",
+    "build": "vite build",
+    "start": "bun run src/server/main.ts"
+  },
+  "dependencies": {
+    "@qgenda/core": "workspace:*",
+    "@qgenda/storage": "workspace:*",
+    "effect": "^3.21.3",
+    "hono": "^4.12.25",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "happy-dom": "^20.10.6",
+    "vite": "^8.0.16"
+  }
+}

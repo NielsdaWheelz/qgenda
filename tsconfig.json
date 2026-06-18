@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "module": "Preserve",
     "moduleResolution": "bundler",
     "target": "ESNext",
+    "jsx": "react-jsx",
     "strict": true,
     "exactOptionalPropertyTypes": true,
     "noUncheckedIndexedAccess": true,
@@ -11,7 +12,54 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
     "types": ["bun"],
+    "paths": {
+      "@qgenda/core/api/generateSchedule": ["./packages/core/src/api/generateSchedule.ts"],
+      "@qgenda/core/compiler/compileDiagnostics": ["./packages/core/src/compiler/compileDiagnostics.ts"],
+      "@qgenda/core/compiler/compilePlanningScenario": [
+        "./packages/core/src/compiler/compilePlanningScenario.ts"
+      ],
+      "@qgenda/core/domain/calendar": ["./packages/core/src/domain/calendar.ts"],
+      "@qgenda/core/domain/hash": ["./packages/core/src/domain/hash.ts"],
+      "@qgenda/core/domain/ids": ["./packages/core/src/domain/ids.ts"],
+      "@qgenda/core/domain/scenario": ["./packages/core/src/domain/scenario.ts"],
+      "@qgenda/core/domain/schedule": ["./packages/core/src/domain/schedule.ts"],
+      "@qgenda/core/export/calendarEvents": ["./packages/core/src/export/calendarEvents.ts"],
+      "@qgenda/core/export/csv": ["./packages/core/src/export/csv.ts"],
+      "@qgenda/core/export/ics": ["./packages/core/src/export/ics.ts"],
+      "@qgenda/core/export/printableHtml": ["./packages/core/src/export/printableHtml.ts"],
+      "@qgenda/core/planning/demandExpansion": ["./packages/core/src/planning/demandExpansion.ts"],
+      "@qgenda/core/planning/openingLedger": ["./packages/core/src/planning/openingLedger.ts"],
+      "@qgenda/core/planning/planningSchema": ["./packages/core/src/planning/planningSchema.ts"],
+      "@qgenda/core/planning/planningValidation": ["./packages/core/src/planning/planningValidation.ts"],
+      "@qgenda/core/planning/unavailableDates": ["./packages/core/src/planning/unavailableDates.ts"],
+      "@qgenda/core/rules/catalog": ["./packages/core/src/rules/catalog.ts"],
+      "@qgenda/core/rules/weights": ["./packages/core/src/rules/weights.ts"],
+      "@qgenda/core/scorecard/ledger": ["./packages/core/src/scorecard/ledger.ts"],
+      "@qgenda/core/scorecard/scorecard": ["./packages/core/src/scorecard/scorecard.ts"],
+      "@qgenda/core/solver/Solver": ["./packages/core/src/solver/Solver.ts"],
+      "@qgenda/core/validation/postsolve": ["./packages/core/src/validation/postsolve.ts"],
+      "@qgenda/core/validation/preflight": ["./packages/core/src/validation/preflight.ts"],
+      "@qgenda/storage/db": ["./packages/storage/src/db.ts"],
+      "@qgenda/storage/repositories/planningRepository": [
+        "./packages/storage/src/repositories/planningRepository.ts"
+      ],
+      "@qgenda/storage/repositories/scheduleRunRepository": [
+        "./packages/storage/src/repositories/scheduleRunRepository.ts"
+      ],
+      "@qgenda/web/client/App": ["./apps/web/src/client/App.tsx"],
+      "@qgenda/web/client/api/client": ["./apps/web/src/client/api/client.ts"],
+      "@qgenda/web/client/api/schemas": ["./apps/web/src/client/api/schemas.ts"],
+      "@qgenda/web/client/components/CalendarGrid": ["./apps/web/src/client/components/CalendarGrid.tsx"],
+      "@qgenda/web/client/components/ExportMenu": ["./apps/web/src/client/components/ExportMenu.tsx"],
+      "@qgenda/web/client/components/ProviderDayGrid": [
+        "./apps/web/src/client/components/ProviderDayGrid.tsx"
+      ],
+      "@qgenda/web/client/components/ProviderForm": ["./apps/web/src/client/components/ProviderForm.tsx"],
+      "@qgenda/web/client/components/ScorecardPanel": ["./apps/web/src/client/components/ScorecardPanel.tsx"],
+      "@qgenda/web/client/state": ["./apps/web/src/client/state.tsx"],
+      "@qgenda/web/server/http": ["./apps/web/src/server/http.ts"]
+    },
     "noEmit": true
   },
-  "include": ["src", "tests"]
+  "include": ["packages", "apps", "tests"]
 }

@@ -1,0 +1,16 @@
+{
+  "name": "@qgenda/storage",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./db": "./src/db.ts",
+    "./repositories/planningRepository": "./src/repositories/planningRepository.ts",
+    "./repositories/scheduleRunRepository": "./src/repositories/scheduleRunRepository.ts"
+  },
+  "dependencies": {
+    "@qgenda/core": "workspace:*",
+    "drizzle-orm": "^0.45.2",
+    "effect": "^3.21.3"
+  }
+}

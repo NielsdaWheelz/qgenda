@@ -5,6 +5,7 @@
 - [Architecture](architecture.md)
 - [QGenda physician scheduling research](qgenda-physician-scheduling-research.md)
 - [v0.1 generator spec](specs/v0.1-generator-spec.md)
+- [v0.2 local usable MVP spec](specs/v0.2-local-usable-mvp-spec.md)
 
 ## Shared Engineering Rules
 

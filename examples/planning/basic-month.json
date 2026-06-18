@@ -1,0 +1,205 @@
+{
+  "workspace": {
+    "schema_version": "v0.2",
+    "workspace_id": "local",
+    "timezone": "America/Los_Angeles",
+    "active_cycle_start": "2026-01-01",
+    "active_cycle_end": "2026-12-31",
+    "opening_ledger_start_fresh": true
+  },
+  "providers": [
+    {
+      "provider_id": "dr_anderson",
+      "display_name": "Dr. Anderson",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_brooks",
+      "display_name": "Dr. Brooks",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_chen",
+      "display_name": "Dr. Chen",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_diaz",
+      "display_name": "Dr. Diaz",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_patel",
+      "display_name": "Dr. Patel (0.5 FTE)",
+      "fte": 0.5,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "provider_id": "dr_okafor",
+      "display_name": "Dr. Okafor",
+      "fte": 1.0,
+      "call_eligible": false,
+      "eye_eligible": true,
+      "dental_eligible": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    }
+  ],
+  "unavailability": [
+    {
+      "unavailability_id": "vac_brooks_mar",
+      "provider_id": "dr_brooks",
+      "start_date": "2026-03-09",
+      "end_date": "2026-03-11",
+      "kind": "vacation",
+      "label": "Vacation"
+    }
+  ],
+  "demand_templates": [
+    {
+      "template_id": "tpl_mon",
+      "weekday": "monday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_tue",
+      "weekday": "tuesday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_wed",
+      "weekday": "wednesday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 1,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_thu",
+      "weekday": "thursday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 1,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_fri",
+      "weekday": "friday",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_sat",
+      "weekday": "saturday",
+      "room_count": 0,
+      "normal_list_slots": 0,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "template_id": "tpl_sun",
+      "weekday": "sunday",
+      "room_count": 0,
+      "normal_list_slots": 0,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    }
+  ],
+  "date_exceptions": [
+    {
+      "exception_id": "closure_2026_03_11",
+      "date": "2026-03-11",
+      "room_count": 0,
+      "normal_list_slots": 0,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": false,
+      "label": "Clinic closed (department training)"
+    }
+  ],
+  "holidays": [],
+  "weekend_blocks": [],
+  "opening_ledger": [
+    {
+      "provider_id": "dr_anderson",
+      "cycle_start": "2026-01-01",
+      "as_of_date": "2026-03-01",
+      "call_burden": 4.0,
+      "weekend_burden": 1.5,
+      "holiday_burden": 0.0,
+      "first_count": 4,
+      "second_count": 3,
+      "middle_count": 2,
+      "last_count": 2,
+      "eye_count": 0,
+      "dental_count": 0
+    },
+    {
+      "provider_id": "dr_brooks",
+      "cycle_start": "2026-01-01",
+      "as_of_date": "2026-03-01",
+      "call_burden": 2.0,
+      "weekend_burden": 0.0,
+      "holiday_burden": 0.0,
+      "first_count": 2,
+      "second_count": 1,
+      "middle_count": 1,
+      "last_count": 4,
+      "eye_count": 0,
+      "dental_count": 0
+    }
+  ]
+}
