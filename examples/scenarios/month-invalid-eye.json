@@ -1,0 +1,43 @@
+{
+  "schema_version": "v0.1",
+  "scenario_id": "month-invalid-eye",
+  "horizon": {
+    "start_date": "2026-04-01",
+    "end_date": "2026-04-01",
+    "timezone": "America/Los_Angeles"
+  },
+  "providers": [
+    {
+      "id": "dr_call_only",
+      "display_name": "Dr. Call Only",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null,
+      "unavailable_dates": []
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-04-01",
+      "room_count": 2,
+      "normal_list_slots": 1,
+      "eye_slots": 1,
+      "dental_slots": 0,
+      "call_required": false,
+      "holiday_id": null,
+      "weekend_block_id": null
+    }
+  ],
+  "holidays": [],
+  "weekend_blocks": [],
+  "opening_ledger": [],
+  "rules": {},
+  "solver": {
+    "max_seconds": 30,
+    "random_seed": 1,
+    "allow_feasible_result": false
+  }
+}

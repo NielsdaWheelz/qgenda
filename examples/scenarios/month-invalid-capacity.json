@@ -1,0 +1,54 @@
+{
+  "schema_version": "v0.1",
+  "scenario_id": "month-invalid-capacity",
+  "horizon": {
+    "start_date": "2026-04-02",
+    "end_date": "2026-04-02",
+    "timezone": "America/Los_Angeles"
+  },
+  "providers": [
+    {
+      "id": "dr_call_eye",
+      "display_name": "Dr. Call Eye",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": true,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null,
+      "unavailable_dates": []
+    },
+    {
+      "id": "dr_support",
+      "display_name": "Dr. Support",
+      "fte": 1.0,
+      "call_eligible": false,
+      "eye_eligible": true,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null,
+      "unavailable_dates": []
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-04-02",
+      "room_count": 1,
+      "normal_list_slots": 1,
+      "eye_slots": 1,
+      "dental_slots": 0,
+      "call_required": false,
+      "holiday_id": null,
+      "weekend_block_id": null
+    }
+  ],
+  "holidays": [],
+  "weekend_blocks": [],
+  "opening_ledger": [],
+  "rules": {},
+  "solver": {
+    "max_seconds": 30,
+    "random_seed": 1,
+    "allow_feasible_result": false
+  }
+}

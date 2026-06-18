@@ -1,0 +1,61 @@
+{
+  "schema_version": "v0.1",
+  "scenario_id": "month-infeasible-post-call",
+  "horizon": {
+    "start_date": "2026-02-02",
+    "end_date": "2026-02-03",
+    "timezone": "America/Los_Angeles"
+  },
+  "providers": [
+    {
+      "id": "dr_only_caller",
+      "display_name": "Dr. Only Caller",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "id": "dr_non_call_support",
+      "display_name": "Dr. Non-Call Support",
+      "fte": 1.0,
+      "call_eligible": false,
+      "eye_eligible": true,
+      "dental_eligible": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-02-02",
+      "room_count": 2,
+      "normal_list_slots": 1,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "holiday_id": null,
+      "weekend_block_id": null
+    },
+    {
+      "date": "2026-02-03",
+      "room_count": 2,
+      "normal_list_slots": 1,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "holiday_id": null,
+      "weekend_block_id": null
+    }
+  ],
+  "holidays": [],
+  "weekend_blocks": [],
+  "opening_ledger": [],
+  "solver": {
+    "max_seconds": 30,
+    "random_seed": 1,
+    "allow_feasible_result": false
+  }
+}

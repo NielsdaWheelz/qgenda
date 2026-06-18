@@ -1,0 +1,151 @@
+{
+  "schema_version": "v0.1",
+  "scenario_id": "month-eye-dental",
+  "horizon": {
+    "start_date": "2026-03-02",
+    "end_date": "2026-03-08",
+    "timezone": "America/Los_Angeles"
+  },
+  "providers": [
+    {
+      "id": "dr_call_1",
+      "display_name": "Dr. Call One",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "id": "dr_call_2",
+      "display_name": "Dr. Call Two",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "id": "dr_call_3",
+      "display_name": "Dr. Call Three",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "id": "dr_call_4_dental",
+      "display_name": "Dr. Call Four (dental-capable)",
+      "fte": 1.0,
+      "call_eligible": true,
+      "eye_eligible": false,
+      "dental_eligible": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "id": "dr_eye",
+      "display_name": "Dr. Eye (non-call)",
+      "fte": 1.0,
+      "call_eligible": false,
+      "eye_eligible": true,
+      "dental_eligible": false,
+      "active_from": "2026-01-01",
+      "active_until": null
+    },
+    {
+      "id": "dr_dental",
+      "display_name": "Dr. Dental (non-call)",
+      "fte": 1.0,
+      "call_eligible": false,
+      "eye_eligible": false,
+      "dental_eligible": true,
+      "active_from": "2026-01-01",
+      "active_until": null
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-03-02",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "holiday_id": null,
+      "weekend_block_id": null
+    },
+    {
+      "date": "2026-03-03",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 1,
+      "dental_slots": 1,
+      "call_required": true,
+      "holiday_id": null,
+      "weekend_block_id": null
+    },
+    {
+      "date": "2026-03-04",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "holiday_id": null,
+      "weekend_block_id": null
+    },
+    {
+      "date": "2026-03-05",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 1,
+      "dental_slots": 1,
+      "call_required": true,
+      "holiday_id": null,
+      "weekend_block_id": null
+    },
+    {
+      "date": "2026-03-06",
+      "room_count": 6,
+      "normal_list_slots": 3,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "holiday_id": null,
+      "weekend_block_id": null
+    },
+    {
+      "date": "2026-03-07",
+      "room_count": 6,
+      "normal_list_slots": 1,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "holiday_id": null,
+      "weekend_block_id": null
+    },
+    {
+      "date": "2026-03-08",
+      "room_count": 6,
+      "normal_list_slots": 1,
+      "eye_slots": 0,
+      "dental_slots": 0,
+      "call_required": true,
+      "holiday_id": null,
+      "weekend_block_id": null
+    }
+  ],
+  "holidays": [],
+  "weekend_blocks": [],
+  "opening_ledger": [],
+  "solver": {
+    "max_seconds": 30,
+    "random_seed": 1,
+    "allow_feasible_result": false
+  }
+}
